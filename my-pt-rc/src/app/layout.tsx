@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   other: {
     "made-by": "nikihashi",
   },
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
 };
 
 export const viewport: Viewport = {
