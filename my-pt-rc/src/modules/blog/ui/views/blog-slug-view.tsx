@@ -50,8 +50,8 @@ export const BlogSlugView = ({ slug }: { slug: string }) => {
     data.createdAt,
   );
   const contactHref =
-    siteConfig.socialLinks.find((link) => link.title === "Contact me")?.href ??
-    "";
+    siteConfig.socialLinks.find((link) => link.title === "WhatsApp")?.href ??
+    "https://wa.me/918264531881";
 
   const scrollToArticle = () => {
     document
@@ -135,7 +135,7 @@ export const BlogSlugView = ({ slug }: { slug: string }) => {
 
         {/* CONTACT CARD  */}
         <ContactCard
-          title="Contact me"
+          title="WhatsApp"
           href={contactHref}
           className="bg-primary text-white hover:text-black dark:text-black dark:hover:text-white h-14"
         />

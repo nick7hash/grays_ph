@@ -47,11 +47,10 @@ export const BlogView = () => {
 
         {/* CONTACT CARDS  */}
         <div className="w-full grid grid-cols-2 gap-3 mt-3">
-          <ContactCard title="Instagram" />
-          <ContactCard title="GitHub" />
-          <ContactCard title="X" />
+          <ContactCard title="Instagram" href="https://www.instagram.com/graysbynitin" />
           <ContactCard
-            title="Contact me"
+            title="WhatsApp"
+            href="https://wa.me/918264531881"
             className="bg-primary hover:bg-primary-hover text-white dark:text-black"
           />
         </div>
@@ -104,11 +103,10 @@ export const BlogViewLoadingStatus = () => {
 
         {/* CONTACT CARDS  */}
         <div className="w-full grid grid-cols-2 gap-3 mt-3">
-          <ContactCard title="Instagram" />
-          <ContactCard title="GitHub" />
-          <ContactCard title="X" />
+          <ContactCard title="Instagram" href="https://www.instagram.com/graysbynitin" />
           <ContactCard
-            title="Contact me"
+            title="WhatsApp"
+            href="https://wa.me/918264531881"
             className="bg-primary hover:bg-primary-hover text-white dark:text-black"
           />
         </div>
