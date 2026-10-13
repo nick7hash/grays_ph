@@ -34,7 +34,7 @@ export const siteConfig = {
   /** About page images */
   images: {
     about: "/about.png",
-    aboutMobile: "/mobile_about.jpeg",
+    aboutMobile: "/mobile_about.png",
     head: "/work/featured/hero.jpg",
     headMobile: "/mobile_head.jpeg",
   },

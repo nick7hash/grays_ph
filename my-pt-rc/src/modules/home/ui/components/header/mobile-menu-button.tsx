@@ -1,24 +1,34 @@
 "use client";
 
-import React from "react";
-import Graphic from "../../../../../components/graphic";
 import { useState } from "react";
+import Graphic from "../../../../../components/graphic";
 import MobileMenu from "./mobile-menu";
 
 const MobileMenuButton = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const topOffset = "calc(env(safe-area-inset-top, 0px) + 12px)";
 
   return (
     <>
       <button
+        type="button"
         onClick={() => setIsOpen(true)}
-        className="fixed right-3 z-40 bg-background rounded-bl-[18px] lg:hidden cursor-pointer select-none"
-        style={{ top: "calc(env(safe-area-inset-top, 0px) + 12px)" }}
+        className="fixed right-3 z-50 bg-background rounded-bl-[18px] lg:hidden cursor-pointer select-none"
+        style={{ top: topOffset }}
+        aria-label="Open menu"
       >
         <div className="relative pb-3 px-4">
-          <h1 className="text-sm font-light">Menu</h1>
-          <Graphic className="absolute -bottom-4 right-0 rotate-90" />
-          <Graphic className="absolute -left-4 top-0 rotate-90" />
+          <span className="text-sm font-light">Menu</span>
+
+          {/* Concave fillet: bottom-right of Menu pill */}
+          <div className="absolute -bottom-[18px] right-0 size-[18px] rotate-90 pointer-events-none">
+            <Graphic />
+          </div>
+
+          {/* Concave fillet: top-left into the camera-bump gap */}
+          <div className="absolute top-0 -left-[18px] size-[18px] rotate-90 pointer-events-none">
+            <Graphic />
+          </div>
         </div>
       </button>
 

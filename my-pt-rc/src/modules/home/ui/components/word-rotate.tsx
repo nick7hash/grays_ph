@@ -20,7 +20,7 @@ interface Props {
 const WordRotate = ({ label, label2, style }: Props) => {
   return (
     <div
-      className="relative inline-block overflow-hidden min-w-[8.5rem]"
+      className="relative inline-block overflow-hidden min-w-[5.5rem] sm:min-w-[8.5rem]"
       style={{ lineHeight: 0.75 }}
     >
       <div
